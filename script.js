@@ -1,0 +1,19 @@
+const close = document.getElementById('close');
+const bar = document.getElementById('bar');
+const nav = document.getElementById('navbar');
+
+console.log(bar)
+console.log(nav)
+console.log(close)
+
+if(bar){
+    bar.addEventListener('click', ()=>{
+        nav.classList.add('active');
+    })
+}
+
+if(close){
+    close.addEventListener('click', ()=>{
+        nav.classList.remove('active');
+    })
+}
